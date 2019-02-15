@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/banner.css">
+</head>
+<body>
+  <div class="banner_content">
+    <img ondragstart='return false' class="posimg" src="./image/phone.png" alt="">
+    <section id="banner_">
+      <ul class="banner_container">
+        <li class>
+          <img ondragstart='return false' src="./image/home.png" alt="">
+        </li>
+        <li class>
+          <img ondragstart='return false' src="./image/computed-list.png" alt="">
+        </li>
+        <li class="active_">
+          <img ondragstart='return false' src="./image/sport.png" alt="">
+        </li>
+        <li class>
+          <img ondragstart='return false' src="./image/team.png" alt="">
+        </li>
+        <li class>
+          <img ondragstart='return false' src="./image/mine.png" alt="">
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script src="./js/banner.js"></script>
+  <script>
+    window.onload = function() {
+      new Banner({
+        el: '.banner_container',
+        time: 3000,
+        automatic: true
+      });
+    }
+  </script>
+</body>
+</html>
